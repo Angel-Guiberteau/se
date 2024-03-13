@@ -1,0 +1,205 @@
+/* Angel Guiberteau Franco */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: rubik, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    /* background-color: #f5f5f5; */
+}
+
+/* ---------- MENU ---------- */
+
+.nav {
+    max-width: 100%;
+    background-color: #fff;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.h_title a:visited {
+    color: #333;
+}
+.h_title a{
+    text-decoration: none;
+    color: #333;
+}
+
+.h_title h1 {
+    font-size: 170%;
+    text-align: center;
+}
+
+.h_menu ul {
+    list-style: none;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.h_menu li {
+    margin-left: 15%;
+    transition: 0.3 ease;
+}
+
+.h_menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 120%;
+}
+
+.h_menu button{
+    border: none;
+    transition: all 0.5s ease;
+}
+
+
+.h_menu button:hover{
+    transform: scale(1.40);
+    cursor: pointer;
+}
+
+/* ---------- CATEGORÍAS ----------*/
+
+.c_container{
+    max-width: 90%;
+    margin: auto;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    color: white;
+}
+
+.cate{
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    padding: 3%;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(97,87,255,1) 35%, rgba(238,73,253,1) 100%);
+    text-shadow: 2px 2px 2px rgba(69, 69, 69, 0.65);
+    box-shadow: 8px 8px 8px 1px rgba(69, 69, 69, 0.65);
+}
+
+.cate h2{
+    text-align: center;
+    font-size: 175%;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px 2px rgba(69, 69, 69, 0.65);
+}
+
+.cate hr{
+    width: 100%;
+    background: white;
+    height: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* ---------- FORMULARIO ---------- */
+
+.formulario{
+    padding: 2%;
+    background: linear-gradient(90deg, rgba(97,87,255,1) 35%, rgba(238,73,253,1) 100%);
+}
+
+.f_container{
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+    background: rgb(255, 255, 255,0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 8px 8px 22px 1px rgba(69, 69, 69, 0.65);
+    text-shadow:inset 0px 1px 0px #000000;
+}
+
+f.f_title{
+    margin-bottom: 5%;
+    width: 100%;
+}
+
+.f_title h1{
+    text-align: center;
+    color: #fff;
+    font-size: 180%;
+    text-shadow: 2px 2px 2px rgba(69, 69, 69, 0.65); 
+}
+
+.f_inputs{
+    margin: auto;
+}
+
+label{
+    color: #fff;
+    font-size: 110%;
+    display: block;
+    /* text-shadow: 2px 2px 2px rgba(69, 69, 69, 0.65); */
+}
+
+select{
+    width: 100%;
+    padding: 2%;
+    margin: 2% 0;
+    border: none;
+    border-radius: 5px;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+input[type="text"], textarea{
+    width: 96%;
+    padding: 2%;
+    margin: 2% 0;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+
+.f_submit input[type="text"]:focus, textarea:focus, select:focus{
+    border-image: none;
+}
+
+.f_submit{
+    text-align: right;
+}
+
+.f_submit input[type="submit"], input[type="reset"]{
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+input[type="reset"]{
+    background: linear-gradient(90deg, rgba(97, 87, 255, 1) 30%, rgba(160, 81, 254, 1) 100%);
+    box-shadow: 8px 8px 22px 1px rgba(69, 69, 69, 0.65);
+    margin-right: 2%;
+}  
+
+input[type="submit"]{
+    background: linear-gradient(90deg, rgba(160, 81, 254, 1) 30%, rgba(238,73,253,1) 100%);
+    box-shadow: 8px 8px 22px 1px rgba(69, 69, 69, 0.65);
+}
+
+.f_submit input[type="submit"]:hover, input[type="reset"]:hover{
+    transform: scale(1.10);
+    color: black;
+    background: #f5f5f5;
+    cursor: pointer;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="resources/EscuelaVirgenGuadalupe.ico" type="image/x-icon" />
+        <title>Semana Ignaciana</title>
+    </head>
+    <body>
+        <!-- 
+            1- #8167F5
+            2- #DF6EF5
+            3- #B36EF5
+            4- #4961F5
+            5- #F56CCB
+            6- #DBC0F5
+        -->
+        <header>
+            <nav class="nav">
+                <div class="h_title">
+                    <a href="index.html"><h1>Valorando Competencias</h1></a>
+                </div>
+                <div class="h_menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#categorias">Categorías</a></li>
+                            <li><a href="#evaluacion">Evaluación</a></li>
+                            <!-- <li>
+                                <button class="button" onclick="toggleDarkMode()">
+                                    <img src="resources/moon.svg" alt="Dark mode"/>
+                                </button>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+        </header>
+        <!-- <div class="c_container">
+            <div class="cate">
+                <div>
+                    <h2>Liderazgo</h2>
+                    <hr/>
+                    <p>
+                        El liderazgo se manifiesta en la capacidad de organizar actividades, 
+                        delegar tareas y fomentar un ambiente colaborativo donde todos los miembros 
+                        del grupo se sientan valorados y motivados a contribuir al éxito 
+                        del equipo.
+                    </p>
+                </div>
+            </div>
+            <div class="cate">
+                <div>
+                    <h2>Solidaridad</h2>
+                    <hr/>
+                    <p>
+                        La solidaridad se manifiesta en acciones como ayudar a un compañero 
+                        con dificultades académicas, compartir recursos o participar en iniciativas 
+                        solidarias que beneficien a la comunidad escolar o a la sociedad en general.
+                    </p>
+                </div>
+            </div>
+            <div class="cate">
+                <div>
+                    <h2>Humildad</h2>
+                    <hr/>
+                    <p>
+                        La humildad se refleja en la disposición a aprender de los demás, a admitir 
+                        cuando nos equivocamos y a buscar constantemente mejorar y crecer como personas 
+                        y como estudiantes.
+                    </p>
+                </div>
+            </div>
+            <div class="cate">
+                <div>
+                    <h2>Honestidad</h2>
+                    <hr/>
+                    <p>
+                        La honestidad se manifiesta en la entrega de trabajos originales y honestos, 
+                        en la comunicación abierta y sincera con los compañeros y los profesores, y en 
+                        el respeto por las normas y los valores de la comunidad educativa.
+                    </p>
+                </div>
+            </div>
+            <div class="cate">
+                <div>
+                    <h2>Creatividad</h2>
+                    <hr/>
+                    <p>
+                        La creatividad se manifiesta en la capacidad de pensar críticamente, de 
+                        explorar nuevas formas de abordar los temas y de expresar ideas de manera 
+                        original y creativa a través de proyectos, presentaciones y actividades.
+                    </p>
+                </div>
+            </div>
+            <div class="cate">
+                <div>
+                    <h2>Proactividad</h2>
+                    <hr/>
+                    <p>
+                        La proactividad se refleja en la participación activa en clase, en la búsqueda 
+                        de recursos y oportunidades para aprender y crecer, y en la disposición a asumir 
+                        retos y desafíos con determinación y entusiasmo.
+                    </p>
+                </div>
+            </div>
+        </div> -->
+        <div class="formulario" id="evaluacion">
+            <div class="f_container">
+                <form>
+                    <div class="f_title">
+                        <h1>Valora a tus compañeros</h1>
+                    </div>
+                    <div class="f_content"> 
+                        <label for="compañeros">Compañeros</label>
+                        <select name="compañeros" required>
+                            <option disabled selected hidden>Selecciona un compañero</option>
+                            <option value="Fernando">Fernando</option>
+                            <option value="1">Alberto</option>
+                            <option value="2">Alvaro</option>
+                            <option value="3">Joaquin</option>
+                            <option value="4">Jose Luis</option>
+                        </select>
+                        <label for="categoria">Categoría</label>
+                        <select name="categoria" required>
+                            <option disabled selected hidden>Selecciona una categoría</option>
+                            <option value="0">Liderazgo</option>
+                            <option value="1">Solidaridad</option>
+                            <option value="2">Humildad</option>
+                            <option value="3">Honestidad</option>
+                            <option value="4">Creatividad</option>
+                            <option value="5">Proactividad</option>
+                        </select>
+                        <label for="momento">Momento</label>
+                        <input type="text" name="momento" placeholder="Momento que valoras" required>
+                        <label for="descripción">Descripción</label>
+                        <textarea name="descripción" placeholder="Escribe una pequeña descripción" required cols="30" rows="4" wrap="hard"></textarea>
+                    </div>
+                    <div class="f_submit">
+                        <input type="reset" value="Reiniciar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
